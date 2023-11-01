@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <input type="text" id="search" placeholder="Search"><br><br><br><br>
+            <label for="price-filter" ><span id="Price" >Price:</span></label>
+            <select id="price-filter">
+                <option value="0">All</option>
+                <option value="100">> 100</option>
+                <option value="200">> 200</option>
+                <option value="300">> 300</option>
+                <option value="400">> 400</option>
+            </select>
+            <br><br><br>
+            <label for="sort-by">Sort by:</label>
+            <br><br><br>
+            <input type="radio" name="sort" id="hightolow" value="hightolow"> High to Low<br><br>
+            <input type="radio" name="sort" id="lowtohigh" value="lowtohigh"> Low to High
+            <br><br><br>
+            <label for="category-filter">Category:</label>
+            
+            <select id="category-filter">
+                <option value="all">All</option>
+                <option value="mobile">Mobile</option>
+                <option value="laptop">Laptop</option>
+                <option value="PC">PC </option>
+            </select>
+        </nav>
+
+        <div class="image-gallery">
+            <!-- Images will be populated here dynamically using JavaScript -->
+        </div>
+    </div>
+
+    <script src="function.js" >  </script>
+</body>
+</html>
